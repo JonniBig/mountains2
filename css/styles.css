@@ -1,0 +1,159 @@
+body {
+  letter-spacing: 0.02em;
+  font-family: Roboto, sans-serif;
+  color: var(--slate);
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.link {
+  color: currentColor;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.02em;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+}
+/* end reset */
+/* header */
+
+.header {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.logo {
+  margin-left: auto 0 0 0;
+}
+@media only screen and (min-width: 768px) {
+  .logo {
+    /* desktop */
+    margin: 0;
+  }
+}
+.container {
+  /* phone */
+  min-width: 320px;
+  max-width: 768px;
+  padding: 8px;
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    /* desktop */
+    max-width: 1440px;
+    padding: 0 32px;
+    display: flex;
+  }
+}
+.section {
+  /* phone */
+  padding: 96px 0;
+}
+@media only screen and (min-width: 768px) {
+  /* desktop */
+  .section {
+    padding: 120px 0;
+  }
+}
+.nav {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* hero section */
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/IMG_2601.webp);
+}
+
+.hero-section {
+  padding: 200px 0;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    line-height: 1.07;
+    max-width: 560px;
+  }
+}
+
+/* section 1 description */
+.description {
+  background-color: #f4f4fd;
+  padding: 24px;
+}
+.title-section {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.text {
+  text-align: center;
+  line-height: 1.5;
+}
